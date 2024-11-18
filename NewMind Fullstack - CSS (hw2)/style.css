@@ -1,0 +1,142 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and Main Layout */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  color: #333;
+}
+
+/* Center Content Class */
+.center-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Logo Styling */
+.logo {
+  max-width: 300px;
+  margin: 30px 0;
+}
+
+/* Search Section Styling */
+.search-section {
+  flex-direction: column;
+  padding: 20px;
+  margin: 20px 0;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.search-input {
+  width: 320px;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+}
+
+.button-group {
+  margin-top: 10px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  margin: 5px;
+  background-color: #f2f2f2;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.search-btn:hover {
+  background-color: #e2e2e2;
+}
+
+/* Navigation Section Styling */
+.links-section {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.nav-section {
+  padding: 15px;
+  border-radius: 5px;
+  width: 30%;
+}
+
+.nav-section ul {
+  list-style-type: none;
+}
+
+.nav-section li {
+  margin: 10px 0;
+}
+
+.nav-section a {
+  color: #333;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.bg-lightgreen {
+  background-color: #c3f4e4;
+}
+
+.bg-green {
+  background-color: #99e0d3;
+}
+
+.bg-darkgreen {
+  background-color: #82d7b6;
+}
+
+.subscription-section {
+  flex-direction: column;
+}
+
+.email-input {
+  padding: 8px;
+  margin: 10px 0;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  width: 80%;
+}
+
+.subscribe-btn {
+  padding: 8px 16px;
+  background-color: #f2f2f2;
+  border: 1px solid #dcdcdc;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.subscribe-btn:hover {
+  background-color: #e2e2e2;
+}
+
+.archive-link {
+  margin-left: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.archive-link:hover {
+  text-decoration: underline;
+}
+
+/* Footer Styling */
+.footer {
+  margin: 20px 0;
+  color: #666;
+  font-size: 14px;
+}

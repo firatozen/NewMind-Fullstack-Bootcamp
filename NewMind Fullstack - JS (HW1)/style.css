@@ -1,0 +1,80 @@
+/* Reset and basic styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f0ece3;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    max-width: 400px;
+    padding: 30px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    color: #4c3a4b;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #777;
+    margin-bottom: 20px;
+}
+
+input[type="text"] {
+    width: 80%;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border: 1px solid #4c3a4b;
+    outline: none;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 1em;
+    color: #fff;
+    background-color: #4c3a4b;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+button:hover {
+    background-color: #6b4a6a;
+}
+
+#clock, #day {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.2em;
+    color: #4c3a4b;
+    margin-top: 10px;
+}
+
+.hidden {
+    display: none;
+}

@@ -1,0 +1,119 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    line-height: 1.7;
+    background: linear-gradient(to right, #d7e1ec, #f9f9f9); /* Soft gradient background */
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+/* Centered container */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow for depth */
+    border-radius: 10px; /* Rounded corners */
+    border: 1px solid #ddd;
+}
+
+/* Header styling */
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+header h1 {
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #2c3e50;
+    margin-bottom: 5px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #666;
+}
+
+/* Section headings */
+h2 {
+    font-size: 1.75em;
+    color: #444;
+    border-bottom: 2px solid #2980b9;
+    padding-bottom: 5px;
+    margin-top: 25px;
+    font-weight: bold;
+}
+
+h3 {
+    font-size: 1.4em;
+    color: #555;
+    margin-top: 20px;
+}
+
+/* Figure styling */
+figure {
+    margin: 20px 0;
+    text-align: center;
+}
+
+figure img {
+    border-radius: 12px;
+    max-width: 100%;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.15); /* Adds depth to image */
+}
+
+figure figcaption {
+    font-size: 0.95em;
+    color: #777;
+    margin-top: 8px;
+    font-style: italic;
+}
+
+/* Ordered list styling */
+ol {
+    padding-left: 20px;
+    font-size: 1.1em;
+    color: #333;
+}
+
+ol li {
+    margin: 8px 0;
+}
+
+/* Link styling */
+a {
+    color: #2980b9;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+    color: #1c2833;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #777;
+}
+
+/* Horizontal rule styling */
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    width: 80%;
+    margin: 20px auto;
+}

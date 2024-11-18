@@ -1,0 +1,90 @@
+/* Reset and basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+    background-color: #f8f3e8;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+header h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #5c3a3a;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 1.1em;
+    color: #777;
+    font-style: italic;
+}
+
+.header-img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Centered container */
+main {
+    max-width: 700px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* Section headings */
+h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    color: #5c3a3a;
+    border-bottom: 1px solid #d3a3a3;
+    padding-bottom: 5px;
+    margin-top: 25px;
+}
+
+ul, ol {
+    padding-left: 25px;
+    font-size: 1.1em;
+    color: #333;
+    margin-top: 10px;
+}
+
+ul li, ol li {
+    margin: 8px 0;
+    line-height: 1.5;
+}
+
+/* Footer styling */
+footer {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 0.9em;
+    color: #555;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #d3a3a3;
+    width: 80%;
+    margin: 20px auto;
+}

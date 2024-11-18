@@ -1,0 +1,450 @@
+/* Global Reset and Typography Setup */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    background: linear-gradient(to bottom right, #1b263b, #415a77); /* Deep blue gradient for professionalism */
+    color: #edf2f4; /* Soft contrasting text color */
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* Page Container */
+.page {
+    width: 100%;
+    max-width: 1280px;
+    background: #f7f9fc; /* Subtle neutral background for the main container */
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    padding: 40px 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    animation: fadeInUp 1s ease-out;
+    border: 1px solid #d3dce6; /* Fine border for a sharp look */
+}
+
+/* Title Section */
+.header {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    color: #1b263b; /* Professional dark blue for main heading */
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.header p {
+    font-size: 1rem;
+    color: #495057; /* Subtle gray for description text */
+    line-height: 1.8;
+}
+
+/* Dropdown Section */
+.select-div {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+#citySelect {
+    width: 360px;
+    padding: 16px 20px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    border: 2px solid #adb5bd; /* Light gray border */
+    border-radius: 15px;
+    background-color: #e9ecef; /* Neutral background */
+    color: #212529; /* Dark gray text */
+    transition: all 0.3s ease;
+    text-transform: capitalize;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+#citySelect:focus {
+    border-color: #38bdf8; /* Professional blue focus border */
+    box-shadow: 0 0 15px rgba(56, 189, 248, 0.5);
+}
+
+#citySelect:hover {
+    background-color: #f8f9fa;
+}
+
+#citySelect option {
+    padding: 12px;
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+/* Weather Card Grid */
+.weather-div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    width: 100%;
+    padding: 20px;
+    background-color: #e9ecef;
+    border-radius: 20px;
+    box-shadow: inset 0 5px 15px rgba(0, 0, 0, 0.05);
+    animation: fadeIn 1s ease-in;
+}
+
+/* Daily Weather Cards */
+.daily-weather {
+    background: linear-gradient(145deg, #ffffff, #f1f3f5); /* Beveled card gradient */
+    width: 280px;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 0, 0, 0.05);
+    text-align: center;
+    transition: all 0.4s ease;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    border: 1px solid #d8dee9; /* Subtle border for refinement */
+}
+
+.daily-weather:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(145deg, #f8f9fa, #ffffff);
+}
+
+.day {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #2d3748; /* Professional, bold dark text */
+    margin-bottom: 20px;
+    text-transform: capitalize;
+}
+
+.icon {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease, filter 0.4s ease;
+}
+
+.daily-weather:hover .icon {
+    transform: scale(1.2);
+    filter: drop-shadow(0 4px 6px rgba(0, 0, 0, 0.2));
+}
+
+.temp {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: #3e4c59; /* Balanced gray-blue */
+    margin: 20px 0;
+}
+
+.feel {
+    font-size: 1rem;
+    color: #6b7280; /* Soft text for details */
+}
+
+.weatherCondition {
+    font-size: 0.95rem;
+    color: #6c757d;
+    margin-top: 12px;
+    font-style: italic;
+}
+
+/* Today's Highlighted Weather */
+.today {
+    background: #38bdf8; /* Highlighted blue for emphasis */
+    border: 2px solid #2563eb; /* Deep blue border for distinction */
+    padding: 40px;
+    transform: scale(1.05);
+    border-radius: 25px;
+    box-shadow: 0 10px 40px rgba(56, 189, 248, 0.2);
+}
+
+.today .day,
+.today .temp,
+.today .weatherCondition {
+    color: #ffffff; /* Contrasting white text for highlighted section */
+}
+
+/* Button Styles */
+button {
+    font-family: 'Roboto', sans-serif;
+    background-color: #2563eb; /* Vibrant professional blue */
+    color: #ffffff;
+    padding: 15px 35px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease;
+    margin-top: 25px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+button:hover {
+    background-color: #1e40af;
+    transform: scale(1.1);
+}
+
+/* Animation: Fade-in & Up */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    .select-div {
+        margin-bottom: 30px;
+    }
+
+    #citySelect {
+        width: 95%;
+        font-size: 1rem;
+    }
+
+    .weather-div {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+
+    .daily-weather {
+        width: 90%;
+        padding: 25px;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+/* Today's Highlighted Weather Card */
+.today {
+    background: linear-gradient(135deg, #c7d2fe, #4c51bf); /* Striking purple-to-blue gradient */
+    border: 3px solid #6366f1; /* Bold blue highlight */
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.25);
+    transform: scale(1.05);
+    animation: slideIn 1s ease-in-out;
+    text-align: center;
+    color: #ffffff; /* White text for better readability */
+}
+
+.today .day {
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #ffffff;
+}
+
+.today .temp {
+    font-size: 3.2rem;
+    font-weight: 900;
+    margin: 25px 0;
+}
+
+.today .weatherCondition {
+    font-size: 1.2rem;
+    color: #e0e7ff;
+    font-style: normal;
+    margin-top: 20px;
+}
+
+/* Button Styles */
+button {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #60a5fa, #3b82f6); /* Vivid gradient button */
+    color: #ffffff;
+    padding: 16px 32px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 10px 20px rgba(56, 189, 248, 0.5);
+    margin-top: 30px;
+}
+
+button:hover {
+    background: linear-gradient(135deg, #2563eb, #1d4ed8); /* Darker hover */
+    transform: scale(1.1);
+}
+
+/* Animated Effects */
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+/* Weather Card Hover Animation */
+.daily-weather:hover {
+    animation: bounce 0.6s ease-in-out;
+}
+
+/* Improved Responsiveness */
+@media (max-width: 1024px) {
+    .weather-div {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 40px;
+    }
+
+    .daily-weather {
+        width: 300px;
+        padding: 30px;
+    }
+
+    .today {
+        padding: 30px;
+        font-size: 1rem;
+    }
+
+    button {
+        font-size: 1.2rem;
+        width: 90%;
+    }
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding: 30px;
+    }
+
+    #citySelect {
+        width: 85%;
+    }
+
+    .weather-div {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .daily-weather {
+        width: 95%;
+    }
+
+    button {
+        width: 100%;
+    }
+}
+
+@media (max-width: 480px) {
+    .header h1 {
+        font-size: 2rem;
+    }
+
+    #citySelect {
+        font-size: 1rem;
+        padding: 14px 20px;
+    }
+
+    .today {
+        font-size: 0.9rem;
+        padding: 25px;
+    }
+
+    .daily-weather {
+        padding: 25px;
+    }
+}
+
+/* Visual Enhancements */
+.weather-div::after {
+    content: '';
+    width: 80%;
+    height: 2px;
+    background: #e2e8f0;
+    display: block;
+    margin: 40px auto 0;
+    border-radius: 2px;
+}
+
+header::before {
+    content: '';
+    display: block;
+    width: 120px;
+    height: 5px;
+    background: #60a5fa;
+    margin: 0 auto 10px;
+    border-radius: 5px;
+}
+
+/* Extra Animation for Icons */
+.icon {
+    animation: pulse 2s infinite ease-in-out;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.05);
+    }
+}
+

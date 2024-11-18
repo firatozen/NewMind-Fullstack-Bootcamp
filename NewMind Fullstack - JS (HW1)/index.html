@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome & Clock</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome</h1>
+            <p>Please enter your name to continue</p>
+            <input type="text" id="nameInput" placeholder="Your Name">
+            <button onclick="startClock()">Start</button>
+        </header>
+        <main id="greetingSection" class="hidden">
+            <h2 id="greeting"></h2>
+            <p id="clock"></p>
+            <p id="day"></p>
+        </main>
+    </div>
+    
+    <script src="main.js"></script> <!-- Updated to main.js -->
+</body>
+</html>

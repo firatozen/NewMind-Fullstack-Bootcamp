@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Italian Kitchen</title>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Zilla+Slab&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Boostrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <section class="menu">
+        <!-- title -->
+        <div class="title">
+          <h2>La Cucina Italiana</h2>
+        </div>
+        <!-- filter buttons-->
+        <div class="btn-container">
+          <button class="btn-item btn btn-danger" onclick="filterMenu('All')">Tutti</button>
+          <button class="btn-item btn btn-danger" onclick="filterMenu('Pasta')">Pasta</button>
+          <button class="btn-item btn btn-danger" onclick="filterMenu('Pizza')">Pizza</button>
+          <button class="btn-item btn btn-danger" onclick="filterMenu('Dessert')">Dolci</button>
+        </div>
+        <!-- menu items -->
+        <div class="section-center row" id="menu-items">
+          <!-- menu items will be inserted here by JS -->
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
